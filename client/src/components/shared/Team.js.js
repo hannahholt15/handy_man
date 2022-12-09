@@ -1,7 +1,7 @@
 const Team = () => (
     <>
       <h1>About us</h1>
-      <h5>Something more about use</h5>
+      <h5>Something more about us</h5>
   
       <h3>Meet the Team</h3>
   
