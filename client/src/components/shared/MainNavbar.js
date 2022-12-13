@@ -5,10 +5,10 @@ const MainNavbar = () => (
     <nav>
       <h2>HandyMan</h2>
       <ul>
-        <Link to='/home'>
+        <Link to='/'>
           <li>Home</li>
         </Link>
-        <Link to='/team'>
+        <Link to='/Team'>
           <li>Team</li>
         </Link>
         <Link to='/workers'>
