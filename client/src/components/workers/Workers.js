@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-const Workers = () => {
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const Workers = () =>
 {
