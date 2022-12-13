@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useState, useEffect } from "react";
+import axios from "axios";
+const Workers = () => {
+  const [workers, setWorkers]
 
-const Workers = () =>
-{
-
-} 
-export default Workers
+}
