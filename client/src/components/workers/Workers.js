@@ -16,13 +16,5 @@ const Workers = () => {
       .catch( err => console.log(err))
   }
 
-  return (
-   <>
-   <WorkerForm addWorker={addWorker}/>
-   <h1>
-    Workers
-   </h1>
-   </> 
-  )
-}
-export default Workers;
+} 
+export default Workers
