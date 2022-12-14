@@ -17,22 +17,7 @@ const Team = () => (
       <h4>Member 4</h4>
       <img src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80' width='100' alt='member' />
      
-<<<<<<< HEAD
-=======
-=======
-      <img src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80' width='100' alt='member' />
-     
-      <h4>Member 2</h4>
-      <img src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80' width='100' alt='member' />
-     
-      <h4>Member 3</h4>
-      <img src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80' width='100' alt='member' />
-     
-      <h4>Member 4</h4>
-      <img src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80' width='100' alt='member' />
-     
->>>>>>> e17a32f (fixed bugs so it can run, lots of unreachable code and mislabled stuff but it runs now, no views yet)
->>>>>>> 1293c77 (home done)
+
     </>
 )
 export default Team;
