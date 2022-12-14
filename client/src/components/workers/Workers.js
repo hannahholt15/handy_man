@@ -10,7 +10,7 @@ const Workers = () => {
     .catch( err => console.log(err))
   }, [])
 
-  const addWorkers = (worker) => {
+  const addWorker = (worker) => {
     axios.post('/api/workers', { worker })
       .then( res => setWorkers([...workers, res.data]))
       .catch( err => console.log(err))
@@ -18,7 +18,7 @@ const Workers = () => {
 
   return (
    <>
-   <WorkerForm addWorkers={addWorkers}/>
+   <WorkerForm addWorker={addWorker}/>
    <h1>
     Workers
    </h1>

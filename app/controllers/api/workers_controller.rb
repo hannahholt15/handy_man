@@ -35,7 +35,7 @@ class Api::WorkersController < ApplicationController
 
   private
   def worker_params
-    params.require(:worker).permit(:first_name, :last_name :image)
+    params.require(:worker).permit(:first_name, :last_name, :image)
   end
   
   def set_worker
