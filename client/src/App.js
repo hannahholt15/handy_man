@@ -10,15 +10,10 @@ const App = () => (
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
-      <Route path='/worker' element={<Lists />} />
+      <Route path='/worker' element={<Worker />} />
       <Route path='/*' element={<Nomatch />} />
     </Routes>
   </>
 )
-// const App = () => {
-//   return (
-
-//   )
-// }
 
 export default App;
