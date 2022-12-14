@@ -1,10 +1,9 @@
 class Api::WorkersController < ApplicationController
  before_action :set_worker, only: [:show, :update, :destroy]
 
-
-    def index
-        render json: Worker.all
-   end
+  def index
+    render json: Worker.all
+  end
 
   def show
      @worker = Worker.find(params[:id])
@@ -14,17 +13,17 @@ class Api::WorkersController < ApplicationController
   def create
     @worker = Worker.new(worker_params)
     if @worker.save 
-        render json: @worker
+      render json: @worker
     else 
-        render json: { errors: @worker.errors }, status: :unprocessable_entity
+      render json: { errors: @worker.errors }, status: :unprocessable_entity
     end
   end
 
   def update
     if @worker.update(worker_params)
-        render json: @worker
+      render json: @worker
     else
-        render json: {errors: @worker.errors }, status: :unprocessable_entity
+      render json: {errors: @worker.errors }, status: :unprocessable_entity
     end
   end
 
