@@ -1,13 +1,13 @@
-import { link } from 'react-router-dom'
+// import { link } from 'react-router-dom'
 
-const HomeFooter = () => (
-
-
+// const HomeFooter = () => (
 
 
 
 
 
+
+
  
  
  
@@ -20,5 +20,5 @@ const HomeFooter = () => (
  
  
  
- )
-export default HomeFooter;
+//  )
+// export default HomeFooter;
