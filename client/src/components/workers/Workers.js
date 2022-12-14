@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import WorkerForm from './WorkerForm';
+import { useState, useEffect } from "react";
+import axios from "axios";
 const Workers = () => {
-  const [workers, setWorkers] = useState ([])
 
   useEffect ( () => {
     axios.get('/api/Worker')
