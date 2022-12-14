@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const WorkerForm = ({addWorker, }) => {
-  const [worker, setWorker] = useState ({first_name: '', last_name: '', picture: '', })
+  const [worker, setWorker] = useState ({first_name: '', last_name: '', image: '', })
   
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -12,7 +12,7 @@ const WorkerForm = ({addWorker, }) => {
       addWorker(worker)
   //  }
 
-    setWorker({ first_name: '', last_name: '', })
+    setWorker({ first_name: '', last_name: '', image :'', })
 
   }
 
@@ -36,9 +36,9 @@ const WorkerForm = ({addWorker, }) => {
       />
       <label>Picturelink</label>
       <input
-        name='picture'
-        value={worker.picture}
-        onChange={(e) => setWorker({...worker, picture: e.target.value })}
+        name='image'
+        value={worker.image}
+        onChange={(e) => setWorker({...worker, image: e.target.value })}
         required
       />
       <button type='submit'> Submit </button>
