@@ -1,16 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const WorkerForm = ({addWorker, }) => {
+const WorkerForm = ({addWorker, id, first_name, last_name, image, updateWorker, setEdit }) => {
   const [worker, setWorker] = useState ({first_name: '', last_name: '', image: '', })
   
+  useEffect( () => {
+    if (id) {
+      setWorker({first_name, last_name, image,})
+    }
+  }, [])
+
   const handleSubmit = (e) => {
     e.preventDefault()
-  //  if (id) {
-  //    updateWorker(id, Worker)
-   //   setEdit(false)
-   //  } else {
+   if (id) {
+     updateWorker(id, worker)
+     setEdit(false)
+    } else {
       addWorker(worker)
-  //  }
+   }
 
     setWorker({ first_name: '', last_name: '', image :'', })
 
@@ -18,7 +24,7 @@ const WorkerForm = ({addWorker, }) => {
 
   return (
     <>
-    <h1>Topic</h1>
+    <h1>{id ? "Update" :"Create"}Worker</h1>
     <form onSubmit={handleSubmit}>
       <label>Worker First Name</label>
       <input
